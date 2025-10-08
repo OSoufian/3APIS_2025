@@ -1,5 +1,7 @@
 import express from "express";
 
+import session from "express-session";
+
 import usersRouter from "./routers/users-router.js";
 import authenticationRouter from "./routers/authentification-router.js";
 
