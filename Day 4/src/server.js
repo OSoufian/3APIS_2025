@@ -7,6 +7,10 @@ const app = express();
 
 app.use(express.json());
 
+app.use(session({
+    secret: "secret"
+}));
+
 app.use("/users", usersRouter);
 app.use("/authentification", authenticationRouter);
 
